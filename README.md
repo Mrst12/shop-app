@@ -7,6 +7,9 @@
 - ### User Stories
 
 ## Flowchart
+
+[Flowchart for the logic of the app](./assets/images/shopapp.png)
+
 ## Features
 ## Technologies Used
 ### Languages
