@@ -1,6 +1,15 @@
 # SHOP APP
 ## Final Design
 ## Introduction
+
+This application is built using python, during the first covid lockdown,
+we couldn't go to the shops because of our disbled children, so we used to get 
+a delivery from a supermarket, there were times because of panic buying,
+that we could not get the items we requested, so my husband kept ordering them,
+when it came to putting the shopping away, there was no space for the items, as
+he did not check the cupboards before ordering. I thought this would be a handy application
+for him to save overstocking the cupboards.
+
 ## Contents
 ## User Experience (UX)
 
