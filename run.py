@@ -28,22 +28,23 @@ def menu_selection():
     """
     Asks the user what they want to do, and directs to the appropriate function
     """
-    choice = input("Please make a selection from the above menu: \n")
+    while True:
+        choice = input("Please make a selection from the above menu: \n")
 
-    if choice == "1":
-        pass
-    elif choice == "2":
-        pass
-    elif choice == "3":
-        pass
-    elif choice == "4":
-        pass
-    elif choice == "5":
-        pass
-    elif choice == "6":
-        sys.exit()
-    else:
-        print("I'm sorry that is not a valid input please enter 1-6")
+        if choice == "1":
+            pass
+        elif choice == "2":
+            pass
+        elif choice == "3":
+            pass
+        elif choice == "4":
+            pass
+        elif choice == "5":
+            pass
+        elif choice == "6":
+            sys.exit()
+        else:
+            print("I'm sorry that is not a valid input please enter 1-6")
 
 
 def main():
