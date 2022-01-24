@@ -36,7 +36,7 @@ def menu_selection():
         if choice == "1":
             view_list()
         elif choice == "2":
-            pass
+            add_item()
         elif choice == "3":
             pass
         elif choice == "4":
@@ -51,6 +51,12 @@ def menu_selection():
 def view_list():
     for item in list_for_shopping:
         print(item)
+
+
+def add_item():
+    item_required = input("Please enter the item you wish to add:\n").lower().strip()
+    list_for_shopping.append(item_required)
+    print(list_for_shopping)
 
 
 def main():
