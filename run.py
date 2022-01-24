@@ -1,3 +1,9 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+def welcome():
+    """
+    Get the users name and welcome them to shop app
+    """
+    name = input("Please enter your name:\n ")
+    print(f"Welcome to Shop app {name}.")
+
+
+welcome()
