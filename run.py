@@ -5,12 +5,22 @@ def welcome():
     name = input("Please enter your name:\n ")
     print(f"Welcome to Shop app {name}.")
 
+def menu():
+    """
+    Prints a menu so the user can make a selection to continue
+    """
+    
+
+    
+
 
 def main():
     """
     Run all programm functions
     """
     welcome()
+    menu()
+
 
 print("### WELCOME TO SHOP APP ###")
 main()
