@@ -15,6 +15,11 @@ for him to save overstocking the cupboards.
 
 - ### User Stories
 
+    1. As a user, I want clear instructions on how to use the app.
+    2. As a user, I want feedback as I progress throught the app.
+    3. As a user, if i get something wrong, I would like to know what that is.
+    4. As a user, I want the app to be easy to use.
+
 ## Flowchart
 
 [Flowchart for the logic of the app](./assets/images/shopapp.png)
