@@ -2,8 +2,9 @@ def welcome():
     """
     Get the users name and welcome them to shop app
     """
-    name = input("Please enter your name:\n ")
+    name = input("Please enter your name:\n ").lower().strip()
     print(f"Welcome to Shop app {name}.")
+
 
 def menu():
     """
