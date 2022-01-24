@@ -1,3 +1,5 @@
+import sys
+
 def welcome():
     """
     Get the users name and welcome them to shop app
@@ -39,14 +41,14 @@ def menu_selection():
     elif choice == "5":
         pass
     elif choice == "6":
-        pass
+        sys.exit()
     else:
         print("I'm sorry that is not a valid input please enter 1-6")
 
 
 def main():
     """
-    Run all programm functions
+    Run all programme functions
     """
     welcome()
     menu()
