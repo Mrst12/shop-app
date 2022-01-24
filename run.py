@@ -1,5 +1,7 @@
 import sys
 
+list_for_shopping = ["bread", "milk"]
+
 def welcome():
     """
     Get the users name and welcome them to shop app
@@ -32,7 +34,7 @@ def menu_selection():
         choice = input("Please make a selection from the above menu: \n")
 
         if choice == "1":
-            pass
+            view_list()
         elif choice == "2":
             pass
         elif choice == "3":
@@ -45,6 +47,10 @@ def menu_selection():
             sys.exit()
         else:
             print("I'm sorry that is not a valid input please enter 1-6")
+
+def view_list():
+    for item in list_for_shopping:
+        print(item)
 
 
 def main():
