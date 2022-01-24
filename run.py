@@ -6,4 +6,11 @@ def welcome():
     print(f"Welcome to Shop app {name}.")
 
 
-welcome()
+def main():
+    """
+    Run all programm functions
+    """
+    welcome()
+
+print("### WELCOME TO SHOP APP ###")
+main()
