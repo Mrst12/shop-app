@@ -57,12 +57,16 @@ def view_list():
 
 
 def add_item():
-    """Allows users to add items to their shopping lists"""
+    """Allows users to add items to their shopping lists
+    after checking if its in the list.
+    """
     while True:
         item_required = input("Please enter the item you wish to add:\n").lower().strip()
         if any(char.isdigit() for char in item_required):
             print("Sorry please enter a word not numbers")
             continue
+        elif item_required in list_for_shopping:
+                print(f"{item_required} is already in your list")
         else:
             print(f"{item_required} has been added to your list")
             list_for_shopping.append(item_required)
