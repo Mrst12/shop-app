@@ -54,10 +54,15 @@ def view_list():
 
 
 def add_item():
-    item_required = input("Please enter the item you wish to add:\n").lower().strip()
-    list_for_shopping.append(item_required)
-    print(list_for_shopping)
-
+    while True:
+        item_required = input("Please enter the item you wish to add:\n").lower().strip()
+        if any(char.isdigit() for char in item_required):
+            print("Sorry please enter a word not numbers")
+            continue
+        else:
+            print(f"{item_required} has been added to your list")
+            list_for_shopping.append(item_required)
+            break
 
     
 
