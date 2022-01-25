@@ -2,6 +2,7 @@ import sys
 
 list_for_shopping = ["bread", "milk"]
 
+
 def welcome():
     """
     Get the users name and welcome them to shop app
@@ -38,7 +39,7 @@ def menu_selection():
         elif choice == "2":
             add_item()
         elif choice == "3":
-            pass
+            check_list()
         elif choice == "4":
             pass
         elif choice == "5":
@@ -47,6 +48,7 @@ def menu_selection():
             sys.exit()
         else:
             print("I'm sorry that is not a valid input please enter 1-6")
+
 
 def view_list():
     for item in list_for_shopping:
@@ -64,9 +66,15 @@ def add_item():
             list_for_shopping.append(item_required)
             break
 
+
+def check_list():
+    check_item = input("which item do you want to check?\n").lower().strip()
+    if check_item in list_for_shopping:
+        print(f"{check_item} is on your list if you wish to remove chose option 4\n")
+    else:
+        print(f"{check_item} is not on your list if you wish to add it chose option 2\n")
+
     
-
-
 def main():
     """
     Run all programme functions
