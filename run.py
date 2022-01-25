@@ -51,11 +51,13 @@ def menu_selection():
 
 
 def view_list():
+    """Allows users to view their shopping list"""
     for item in list_for_shopping:
         print(item)
 
 
 def add_item():
+    """Allows users to add items to their shopping lists"""
     while True:
         item_required = input("Please enter the item you wish to add:\n").lower().strip()
         if any(char.isdigit() for char in item_required):
@@ -68,6 +70,7 @@ def add_item():
 
 
 def check_list():
+    """Allows users to check to see if an item is in their list"""
     check_item = input("which item do you want to check?\n").lower().strip()
     if check_item in list_for_shopping:
         print(f"{check_item} is on your list if you wish to remove chose option 4\n")
@@ -77,6 +80,7 @@ def check_list():
 
 
 def remove_item():
+    """Allows a user to remove an item from the list"""
     item_to_remove = input("Which item would you like to remove?\n")
     if item_to_remove not in list_for_shopping:
         print(f"Sorry {item_to_remove} is not in your list")
@@ -86,6 +90,7 @@ def remove_item():
 
 
 def clear_your_list():
+    """Allows a user to clear the list"""
     list_for_shopping.clear()
     print("your shopping list has been cleared")
 
