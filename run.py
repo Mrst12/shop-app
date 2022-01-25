@@ -75,11 +75,16 @@ def add_item():
 
 def check_list():
     """Allows users to check to see if an item is in their list"""
-    check_item = input("which item do you want to check?\n").lower().strip()
-    if check_item in list_for_shopping:
-        print(f"{check_item} is on your list if you wish to remove chose option 4\n")
-    else:
-        print(f"{check_item} is not on your list if you wish to add it chose option 2\n")
+    while True:
+        check_item = input("which item do you want to check?\n").lower().strip()
+        if any(char.isdigit() for char in check_item):
+            print("Sorry please enter a word not numbers")
+            continue
+        elif check_item in list_for_shopping:
+            print(f"{check_item} is on your list if you wish to remove chose option 4\n")
+        else:
+            print(f"{check_item} is not on your list if you wish to add it chose option 2\n")
+            break
 
 
 
