@@ -41,7 +41,7 @@ def menu_selection():
         elif choice == "3":
             check_list()
         elif choice == "4":
-            pass
+            remove_item()
         elif choice == "5":
             pass
         elif choice == "6":
@@ -73,6 +73,16 @@ def check_list():
         print(f"{check_item} is on your list if you wish to remove chose option 4\n")
     else:
         print(f"{check_item} is not on your list if you wish to add it chose option 2\n")
+
+
+
+def remove_item():
+    item_to_remove = input("Which item would you like to remove?\n")
+    if item_to_remove not in list_for_shopping:
+        print(f"Sorry {item_to_remove} is not in your list")
+    else:
+        list_for_shopping.remove(item_to_remove)
+        print(f"{item_to_remove} has been removed from your list")
 
     
 def main():
