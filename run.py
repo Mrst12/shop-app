@@ -43,7 +43,7 @@ def menu_selection():
         elif choice == "4":
             remove_item()
         elif choice == "5":
-            pass
+            clear_your_list()
         elif choice == "6":
             sys.exit()
         else:
@@ -83,6 +83,11 @@ def remove_item():
     else:
         list_for_shopping.remove(item_to_remove)
         print(f"{item_to_remove} has been removed from your list")
+
+
+def clear_your_list():
+    list_for_shopping.clear()
+    print("your shopping list has been cleared")
 
     
 def main():
