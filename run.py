@@ -1,6 +1,8 @@
 import sys
 
-list_for_shopping = ["bread", "milk"]
+#def get_list():
+list_for_shopping = []
+new_list = []    
 
 
 def welcome():
@@ -32,6 +34,7 @@ def menu_selection():
     Asks the user what they want to do, and directs to the appropriate function
     """
     while True:
+        menu()
         choice = input("Please make a selection from the above menu: \n")
 
         if choice == "1":
@@ -52,8 +55,15 @@ def menu_selection():
 
 def view_list():
     """Allows users to view their shopping list"""
-    for item in list_for_shopping:
-        print(item)
+    
+    with open('list_for_shopping.txt', 'rt') as my_list:
+        for element in list_for_shopping:
+            print(element, end='')
+
+def get_data():
+    with open('list_for_shopping.txt', 'rt') as my_list:
+        for line in my_list:
+            list_for_shopping.append(line)
 
 
 def add_item():
@@ -69,8 +79,10 @@ def add_item():
                 print(f"{item_required} is already in your list")
         else:
             print(f"{item_required} has been added to your list")
-            list_for_shopping.append(item_required)
+            new_list.append(item_required + '\n')
+            save_list()
             break
+
 
 
 def check_list():
@@ -80,7 +92,7 @@ def check_list():
         if any(char.isdigit() for char in check_item):
             print("Sorry please enter a word not numbers")
             continue
-        elif check_item in list_for_shopping:
+        elif check_item + '\n' in list_for_shopping:
             print(f"{check_item} is on your list if you wish to remove chose option 4\n")
         else:
             print(f"{check_item} is not on your list if you wish to add it chose option 2\n")
@@ -90,18 +102,34 @@ def check_list():
 
 def remove_item():
     """Allows a user to remove an item from the list"""
-    item_to_remove = input("Which item would you like to remove?\n")
-    if item_to_remove not in list_for_shopping:
+    item_to_remove = input("Which item would you like to remove?\n") 
+    if item_to_remove + '\n' not in list_for_shopping:
         print(f"Sorry {item_to_remove} is not in your list")
     else:
-        list_for_shopping.remove(item_to_remove)
+        list_for_shopping.remove(item_to_remove + '\n')
         print(f"{item_to_remove} has been removed from your list")
+        save_list()
 
 
 def clear_your_list():
     """Allows a user to clear the list"""
     list_for_shopping.clear()
     print("your shopping list has been cleared")
+    save_list()
+
+
+def save_list():
+    list = new_list + list_for_shopping
+    
+    with open('list_for_shopping.txt', 'w') as output_file:
+        for x in list:
+            if x != '\n':
+                output_file.write(x)
+
+    new_list.clear()
+    list_for_shopping.clear()
+    get_data()
+
 
     
 def main():
@@ -109,7 +137,7 @@ def main():
     Run all programme functions
     """
     welcome()
-    menu()
+    get_data()
     menu_selection()
 
 
