@@ -8,8 +8,14 @@ def welcome():
     """
     Get the users name and welcome them to shop app
     """
-    name = input("Please enter your name:\n ").capitalize().strip()
-    print(f"Welcome to Shop app {name}.")
+    while True:
+        name = input("Please enter your name:\n ").capitalize().strip()
+        if any(char.isdigit() for char in name):
+            print("Sorry please enter letters, not numbers")
+            continue
+        else:
+            print(f"Welcome to Shop app {name}.")
+            break
 
 
 def menu():
