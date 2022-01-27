@@ -14,7 +14,7 @@ def welcome():
             print("Sorry please enter letters, not numbers")
             continue
         else:
-            print(f"Welcome to Shop app {name}.")
+            print(f"\n** Welcome to Shop app {name}.**")
             break
 
 
