@@ -60,10 +60,12 @@ def menu_selection():
 
 def view_list():
     """Allows users to view their shopping list"""
-    
-    with open('list_for_shopping.txt', 'rt') as my_list:
-        for element in list_for_shopping:
-            print(element, end='')
+    if list_for_shopping == []:
+        print("\n** Your shopping list is empty **")
+    else:
+        with open('list_for_shopping.txt', 'rt'):
+            for element in list_for_shopping:
+                print(element, end='')
 
 
 
