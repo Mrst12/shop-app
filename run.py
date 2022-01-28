@@ -53,7 +53,7 @@ def menu_selection():
         elif choice == "5":
             clear_your_list()
         elif choice == "6":
-            sys.exit()
+            exit_app()
         else:
             print("I'm sorry that is not a valid input please enter 1-6")
 
@@ -64,6 +64,8 @@ def view_list():
     with open('list_for_shopping.txt', 'rt') as my_list:
         for element in list_for_shopping:
             print(element, end='')
+
+
 
 def get_data():
     with open('list_for_shopping.txt', 'rt') as my_list:
@@ -140,6 +142,17 @@ def save_list():
     new_list.clear()
     list_for_shopping.clear()
     get_data()
+
+
+def exit_app():
+    """
+    Allows a message to be printed and then exit the program
+    so gives the user feedback
+    """
+    print("\n** Thank you for using Shop-app,")
+    print("If you wish to use Shop-app again please click run programme")
+    print("Goodbye **")
+    sys.exit()
 
 
     
