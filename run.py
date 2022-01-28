@@ -84,11 +84,12 @@ def add_item():
         if any(char.isdigit() for char in item_required):
             print("Sorry please enter a word not numbers")
             continue
-        elif item_required in list_for_shopping:
-                print(f"{item_required} is already in your list")
+        elif item_required + '\n' in list_for_shopping:
+            print(f"\n** {item_required} is already in your list **")
+            break
         else:
-            print(f"{item_required} has been added to your list")
-            new_list.append(item_required + '\n')
+            print(f"\n** {item_required} has been added to your list **")
+            list_for_shopping.append(item_required + '\n')
             save_list()
             break
 
@@ -102,9 +103,10 @@ def check_list():
             print("Sorry please enter a word not numbers")
             continue
         elif check_item + '\n' in list_for_shopping:
-            print(f"{check_item} is on your list if you wish to remove chose option 4\n")
+            print(f"\n** {check_item} is on your list if you wish to remove chose option 4**\n")
+            break
         else:
-            print(f"{check_item} is not on your list if you wish to add it chose option 2\n")
+            print(f"\n** {check_item} is not on your list if you wish to add it chose option 2 **\n")
             break
 
 
