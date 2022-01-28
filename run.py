@@ -167,5 +167,5 @@ def main():
     menu_selection()
 
 
-print("### WELCOME TO SHOP APP ###")
+print("### WELCOME TO SHOP APP ###\n")
 main()
