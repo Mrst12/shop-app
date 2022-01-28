@@ -117,11 +117,11 @@ def remove_item():
             print("Sorry please only input letters not numbers")
             continue
         elif item_to_remove + '\n' not in list_for_shopping:
-            print(f"Sorry {item_to_remove} is not in your list")
+            print(f"\n** Sorry {item_to_remove} is not in your list **")
             break
         else:
             list_for_shopping.remove(item_to_remove + '\n')
-            print(f"{item_to_remove} has been removed from your list")
+            print(f"\n** {item_to_remove} has been removed from your list **")
             save_list()
             break
 
