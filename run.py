@@ -101,10 +101,10 @@ def check_list():
     while True:
         check_item = input("which item do you want to check?\n").lower().strip()
         if any(char.isdigit() for char in check_item):
-            print("Sorry please enter a word not numbers")
+            print("\n** Sorry please enter a word not numbers **")
             continue
         elif check_item + '\n' in list_for_shopping:
-            print(f"\n** {check_item} is on your list if you wish to remove chose option 4**\n")
+            print(f"\n** {check_item} is on your list if you wish to remove chose option 4 **\n")
             break
         else:
             print(f"\n** {check_item} is not on your list if you wish to add it chose option 2 **\n")
