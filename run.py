@@ -115,9 +115,9 @@ def check_list():
 def remove_item():
     """Allows a user to remove an item from the list"""
     while True:
-        item_to_remove = input("Which item would you like to remove?\n")
+        item_to_remove = input("Which item would you like to remove?\n").lower().strip()
         if any(char.isdigit() for char in item_to_remove):
-            print("Sorry please only input letters not numbers")
+            print("\n** Sorry please only input letters not numbers **\n")
             continue
         elif item_to_remove + '\n' not in list_for_shopping:
             print(f"\n** Sorry {item_to_remove} is not in your list **")
