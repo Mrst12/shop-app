@@ -63,6 +63,7 @@ def view_list():
     if list_for_shopping == []:
         print("\n** Your shopping list is empty **")
     else:
+        print("\n## Your shopping list is: \n")
         with open('list_for_shopping.txt', 'rt'):
             for element in list_for_shopping:
                 print(element, end='')
