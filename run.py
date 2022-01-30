@@ -1,7 +1,7 @@
 import sys
 
 list_for_shopping = []
-new_list = []    
+new_list = []
 
 
 def welcome():
@@ -33,7 +33,7 @@ def menu():
     6. Exit
     ''')
 
-    
+
 def menu_selection():
     """
     Asks the user what they want to do, and directs to the appropriate function
@@ -69,7 +69,6 @@ def view_list():
                 print(element, end='')
 
 
-
 def get_data():
     with open('list_for_shopping.txt', 'rt') as my_list:
         for line in my_list:
@@ -95,11 +94,10 @@ def add_item():
             break
 
 
-
 def check_list():
     """Allows users to check to see if an item is in their list"""
     while True:
-        check_item = input("which item do you want to check?\n").lower().strip()
+        check_item = input("which item do you want to check\n").lower().strip()
         if any(char.isdigit() for char in check_item):
             print("\n** Sorry please enter a word not numbers **")
             continue
@@ -109,7 +107,6 @@ def check_list():
         else:
             print(f"\n** {check_item} is not on your list if you wish to add it chose option 2 **\n")
             break
-
 
 
 def remove_item():
@@ -138,7 +135,6 @@ def clear_your_list():
 
 def save_list():
     list = new_list + list_for_shopping
-    
     with open('list_for_shopping.txt', 'w') as output_file:
         for x in list:
             if x != '\n':
@@ -160,7 +156,6 @@ def exit_app():
     sys.exit()
 
 
-    
 def main():
     """
     Run all programme functions
