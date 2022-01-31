@@ -79,6 +79,8 @@ if the item already in the list they will be told, if it's not in the list it wi
     - IDE used to code the application.
 - Heroku
     - Used to deploy the application.
+- Pep8 online python checker
+    - used for checking validation of my code.
 ## Testing
 ### Testing user stories
 ### Known bugs
