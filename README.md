@@ -1,5 +1,13 @@
 # SHOP APP
+
+[View the live site here](https://python-shop-app.herokuapp.com/)
+
+[View the github repository here](https://github.com/Mrst12/shop-app)
+
 ## Final Design
+
+![Welcome page of the app](./assets/images/welcome-python.png)
+
 ## Introduction
 
 This application is built using python, during the first covid lockdown,
