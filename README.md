@@ -11,7 +11,7 @@
 ## Introduction
 
 This application is built using python, during the first covid lockdown,
-we couldn't go to the shops because of our disbled children, so we used to get 
+we couldn't go to the shops because of our disabled children, so we used to get 
 a delivery from a supermarket, there were times because of panic buying,
 that we could not get the items we requested, so my husband kept ordering them,
 when it came to putting the shopping away, there was no space for the items, as
@@ -28,6 +28,7 @@ for him to save overstocking the cupboards.
     - [Programmes Used](#programmes-used)
 - [Testing](#testing)
     - [Testing User Stories](#testing-user-stories)
+    - [Validation](#validation)
     - [Known Bugs](#known-bugs)
 - [Deployment](#deployment)
 - [Credits](#credits)
@@ -103,6 +104,14 @@ editor so had to rearrange them so they were in the 80 characters range.
     - The app is well laid out with clear gaps between lines to show the user whta has happenedwith their choice
     I also added an extra message on the end of the app after exiting, so the user wasnt left wondering wether
     they had been successful. A clear goodbye message was shown instead.
+
+### Validation
+
+- The application was checked for numbers, uppercase, lowercase and a mixture from user input,
+    - A check was put in so only words could be entered and then an input asked for again, when the user
+    input their name regardless of wether it was upper or lowercase, it Capitalised the first letter.
+    Regardless of how they input their item (upper/lower), the app made the item lowercase for checking items 
+    purposes.
 
 ### Known bugs
 - I have a trailing whitespace on line 25 which is a print statement that i cannot seem to get rid of
