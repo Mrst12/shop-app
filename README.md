@@ -128,6 +128,20 @@ editor so had to rearrange them so they were in the 80 characters range.
 12. You can choose to have automatic deploy on 
     - You then click on the manual deploy and wait until you see a finished message saying view app
     - Click the view app button
-    - click the run program button at the top.
+    - Click the run program button at the top.
 ## Credits
+- I watched a you tube video for inspiration which i then turned into my own code.
+
+[You tube clip continued in 3 parts](https://www.youtube.com/watch?v=0m7csmqWAgI)
+
+[clip2](https://www.youtube.com/watch?v=yixPipmd1GE)
+
+[clip3](https://www.youtube.com/watch?v=8Jcls2gIqSs)
+
 ### Acknowledgements
+- Code institute for course material and content
+- Everybody on the slack community for support, guidance and patience especially John McPherson
+who helped me understand why my final piece of code refused to work, and Dave Horrocks who
+helped me to finish the deployment of my app.
+- My mentor for assistance and advise on planning and final submission feedback.
+- My husband and children for their patience, support and understanding.
