@@ -107,6 +107,27 @@ editor so had to rearrange them so they were in the 80 characters range.
 ### Known bugs
 - I have a trailing whitespace on line 25 which is a print statement that i cannot seem to get rid of
 - I do not have a blank line at the end of the document as even when it puts it in it doesn't seem to show.
+
 ## Deployment
+- This application has been deployed using Heroku
+1. Create or sign into a Heroku account
+2. Click the Create new app button
+3. Choose a name for the app (This needs to be unique)
+4. Choose region, then click create app.
+5. Click on settings
+6. Click reveal config vars button
+    - In this project we needed to add a key of PORT and VALUE of 8000
+7. Click add.
+8. Click add buildpack
+    - Here we add python, save changes
+    - node.js, save changes
+    - make sure python is on top.
+9. Go to the deploy tab
+10. Choose your deployment method (ours is github)
+11. Search for our repository name, then connect
+12. You can choose to have automatic deploy on 
+    - You then click on the manual deploy and wait until you see a finished message saying view app
+    - Click the view app button
+    - click the run program button at the top.
 ## Credits
 ### Acknowledgements
