@@ -86,7 +86,7 @@ def add_item():
             .strip()
         )
         if any(char.isdigit() for char in item_required):
-            print("Sorry please enter a word not numbers")
+            print("\n** Sorry please enter a word not numbers **\n")
             continue
         elif item_required + '\n' in list_for_shopping:
             print(f"\n** {item_required} is already in your list **")
