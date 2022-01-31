@@ -139,7 +139,7 @@ def remove_item():
 def clear_your_list():
     """Allows a user to clear the list"""
     list_for_shopping.clear()
-    print("your shopping list has been cleared")
+    print("\n** Your shopping list has been cleared **\n")
     save_list()
 
 
@@ -161,8 +161,8 @@ def exit_app():
     so gives the user feedback
     """
     print("\n** Thank you for using Shop-app,")
-    print("If you wish to use Shop-app again please click run programme")
-    print("Goodbye **")
+    print("If you wish to use Shop-app again please click run program")
+    print("Goodbye **\n")
     sys.exit()
 
 
