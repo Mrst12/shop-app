@@ -82,8 +82,17 @@ if the item already in the list they will be told, if it's not in the list it wi
 - Pep8 online python checker
     - used for checking validation of my code.
 ## Testing
+
+- I used pep8 online python checker to test my code, I had a few lines of code which were too long for the
+editor so had to rearrange them so they were in the 80 characters range.
+
+![pep8 online python checker](./assets/images/python-check.png)
+
+
 ### Testing user stories
 ### Known bugs
+- I have a trailing whitespace on line 25 which is a print statement that i cannot seem to get rid of
+- I do not have a blank line at the end of the document as even when it puts it in it doesn't seem to show.
 ## Deployment
 ## Credits
 ### Acknowledgements
