@@ -11,7 +11,7 @@ def welcome():
     while True:
         name = input("Please enter your name:\n ").capitalize().strip()
         if any(char.isdigit() for char in name):
-            print("Sorry please enter letters, not numbers")
+            print("\n** Sorry please enter letters, not numbers **\n")
             continue
         else:
             print(f"\n** Welcome to Shop app {name}.**")
