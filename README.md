@@ -19,6 +19,20 @@ he did not check the cupboards before ordering. I thought this would be a handy 
 for him to save overstocking the cupboards.
 
 ## Contents
+- [User Experience](#user-experience-ux)
+    - [User Stories](#user-stories)
+- [flowchart](#flowchart)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+    - [Languages](#languages)
+    - [Programmes Used](#programmes-used)
+- [Testing](#testing)
+    - [Testing User Stories](#testing-user-stories)
+    - [Known Bugs](#known-bugs)
+- [Deployment](#deployment)
+- [Credits](#credits)
+    - [Acknowledgements](#acknowledgements)
+
 ## User Experience (UX)
 
 - ### User Stories
