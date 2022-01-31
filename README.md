@@ -90,6 +90,20 @@ editor so had to rearrange them so they were in the 80 characters range.
 
 
 ### Testing user stories
+
+1. As a user, I want clear instructions on how to use the app.
+    - There are instructions every step of the way for users.
+2. As a user, I want feedback as I progress throught the app.
+    - Everytime a user does something on the application it tells them what they have done
+    For example added bread to their shopping list, or cleared their list.
+3. As a user, if i get something wrong, I would like to know what that is.
+    - When something is inputted wrong there is feedback to tell the user what they did wrong,
+    and how to put it right.
+4. As a user, I want the app to be easy to use.
+    - The app is well laid out with clear gaps between lines to show the user whta has happenedwith their choice
+    I also added an extra message on the end of the app after exiting, so the user wasnt left wondering wether
+    they had been successful. A clear goodbye message was shown instead.
+
 ### Known bugs
 - I have a trailing whitespace on line 25 which is a print statement that i cannot seem to get rid of
 - I do not have a blank line at the end of the document as even when it puts it in it doesn't seem to show.
