@@ -80,7 +80,11 @@ def add_item():
     after checking if its in the list.
     """
     while True:
-        item_required = input("Please enter the item you wish to add:\n").lower().strip()
+        item_required = (
+            input("Please enter the item you wish to add:\n")
+            .lower()
+            .strip()
+        )
         if any(char.isdigit() for char in item_required):
             print("Sorry please enter a word not numbers")
             continue
@@ -102,17 +106,23 @@ def check_list():
             print("\n** Sorry please enter a word not numbers **")
             continue
         elif check_item + '\n' in list_for_shopping:
-            print(f"\n** {check_item} is on your list if you wish to remove chose option 4 **\n")
+            print(f"\n** {check_item} is on your list")
+            print("If you wish to remove chose option 4 **\n")
             break
         else:
-            print(f"\n** {check_item} is not on your list if you wish to add it chose option 2 **\n")
+            print(f"\n** {check_item} is not on your list")
+            print("If you wish to add it chose option 2 **\n")
             break
 
 
 def remove_item():
     """Allows a user to remove an item from the list"""
     while True:
-        item_to_remove = input("Which item would you like to remove?\n").lower().strip()
+        item_to_remove = (
+             input("Which item would you like to remove?\n")
+             .lower()
+             .strip()
+        )
         if any(char.isdigit() for char in item_to_remove):
             print("\n** Sorry please only input letters not numbers **\n")
             continue
