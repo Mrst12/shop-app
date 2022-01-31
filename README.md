@@ -47,6 +47,23 @@ for him to save overstocking the cupboards.
 [Flowchart for the logic of the app](./assets/images/shopapp.png)
 
 ## Features
+
+- The application includes a welcome message after asking for the users name(shown in the final product above)
+![Start screen](./assets/images/start-screen-python.png)
+- It then shows the user the menu in which they can enter a choice. The menu is shown for every selection.
+- When the user views the shopping list and it is empty, it will give them a feedback message,
+if the shopping list has items on it will list the items.
+![view the shopping list](./assets/images/view-list-empty.png)
+- The user if they choose to add an item will be asked what they would like to add,
+if the item already in the list they will be told, if it's not in the list it will be added.
+![Add item to list](./assets/images/add-item-python.png)
+- The check and remove item functions are similar to the add item, so the user has consistency.
+- There is a clear list function so the user can clear the whole list in one go
+![Clear list](./assets/images/clear-list-python.png)
+- There is an exit function with a feedback message so the user can exit on each selection.
+![Exit program](./assets/images/exit-python.png)
+
+
 ## Technologies Used
 ### Languages
 
