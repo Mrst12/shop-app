@@ -112,6 +112,8 @@ editor so had to rearrange them so they were in the 80 characters range.
     input their name regardless of wether it was upper or lowercase, it Capitalised the first letter.
     Regardless of how they input their item (upper/lower), the app made the item lowercase for checking items 
     purposes.
+- The application was checked for blank spaces and a user just pressing enter, a message is printed
+asking them for a valid input.
 
 ### Known bugs
 - I have a trailing whitespace on line 25 which is a print statement that i cannot seem to get rid of

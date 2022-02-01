@@ -13,7 +13,9 @@ def welcome():
         if any(char.isdigit() for char in name):
             print("\n** Sorry please enter letters, not numbers **\n")
         elif not name:
-            print("** Please enter a valid name **\n") 
+            print("** Please enter a valid name **\n")
+        elif any(not char.isalnum() for char in name):
+            print("\n** Please enter a valid name **\n")
             continue
         else:
             print(f"\n** Welcome to Shop app {name}.**")
@@ -91,6 +93,8 @@ def add_item():
         )
         if any(char.isdigit() for char in item_required):
             print("\n** Sorry please enter a word not numbers **\n")
+        elif any(not char.isalnum() for char in item_required):
+            print("\n** Please enter a valid input **\n")
             continue
         elif item_required + '\n' in list_for_shopping:
             print(f"\n** {item_required} is already in your list **")
@@ -110,6 +114,8 @@ def check_list():
         check_item = input("which item do you want to check\n").lower().strip()
         if any(char.isdigit() for char in check_item):
             print("\n** Sorry please enter a word not numbers **\n")
+        elif any(not char.isalnum() for char in check_item):
+            print("\n** Please enter a valid input **\n")
             continue
         elif check_item + '\n' in list_for_shopping:
             print(f"\n** {check_item} is on your list")
@@ -133,6 +139,8 @@ def remove_item():
         )
         if any(char.isdigit() for char in item_to_remove):
             print("\n** Sorry please only input letters not numbers **\n")
+        elif any(not char.isalnum() for char in item_to_remove):
+            print("\n** Please enter a valid input **\n")
             continue
         elif not item_to_remove:
             print("\n** Please enter a valid input **\n")
