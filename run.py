@@ -44,7 +44,7 @@ def menu_selection():
     """
     while True:
         menu()
-        choice = input("Please make a selection from the above menu:\n")    
+        choice = input("Please make a selection from the above menu:\n")
 
         if choice == "1":
             view_list()
