@@ -12,6 +12,8 @@ def welcome():
         name = input("Please enter your name:\n ").capitalize().strip()
         if any(char.isdigit() for char in name):
             print("\n** Sorry please enter letters, not numbers **\n")
+        elif not name:
+            print("** Please enter a valid name **\n") 
             continue
         else:
             print(f"\n** Welcome to Shop app {name}.**")
@@ -40,7 +42,7 @@ def menu_selection():
     """
     while True:
         menu()
-        choice = input("Please make a selection from the above menu:\n")
+        choice = input("Please make a selection from the above menu:\n")    
 
         if choice == "1":
             view_list()
@@ -54,6 +56,8 @@ def menu_selection():
             clear_your_list()
         elif choice == "6":
             exit_app()
+        elif not choice:
+            print("I'm sorry that is not a valid input please enter 1-6")
         else:
             print("I'm sorry that is not a valid input please enter 1-6")
 
