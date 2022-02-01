@@ -57,9 +57,9 @@ def menu_selection():
         elif choice == "6":
             exit_app()
         elif not choice:
-            print("I'm sorry that is not a valid input please enter 1-6")
+            print("** I'm sorry that is not a valid input please enter 1-6 **")
         else:
-            print("I'm sorry that is not a valid input please enter 1-6")
+            print("** I'm sorry that is not a valid input please enter 1-6 **")
 
 
 def view_list():
@@ -67,7 +67,7 @@ def view_list():
     if list_for_shopping == []:
         print("\n** Your shopping list is empty **")
     else:
-        print("\n## Your shopping list is: \n")
+        print("\n** Your shopping list is: \n")
         with open('list_for_shopping.txt', 'rt'):
             for element in list_for_shopping:
                 print(element, end='')
@@ -95,6 +95,8 @@ def add_item():
         elif item_required + '\n' in list_for_shopping:
             print(f"\n** {item_required} is already in your list **")
             break
+        elif not item_required:
+            print("\n** Please enter a valid input **\n")
         else:
             print(f"\n** {item_required} has been added to your list **")
             list_for_shopping.append(item_required + '\n')
