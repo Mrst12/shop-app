@@ -115,6 +115,8 @@ def check_list():
             print(f"\n** {check_item} is on your list")
             print("If you wish to remove chose option 4 **\n")
             break
+        elif not check_item:
+            print("\n** Please enter a valid input **\n")
         else:
             print(f"\n** {check_item} is not on your list")
             print("If you wish to add it chose option 2 **\n")
@@ -132,6 +134,8 @@ def remove_item():
         if any(char.isdigit() for char in item_to_remove):
             print("\n** Sorry please only input letters not numbers **\n")
             continue
+        elif not item_to_remove:
+            print("\n** Please enter a valid input **\n")
         elif item_to_remove + '\n' not in list_for_shopping:
             print(f"\n** Sorry {item_to_remove} is not in your list **")
             break
