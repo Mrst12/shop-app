@@ -1,8 +1,6 @@
 # SHOP APP
 
-[View the live site here](https://python-shop-app.herokuapp.com/)
-
-[View the github repository here](https://github.com/Mrst12/shop-app)
+[View the live site here](https://shop-app-ne86.onrender.com)
 
 ## Final Design
 
